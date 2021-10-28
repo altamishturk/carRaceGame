@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Game_container {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.score {
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+  background-color: blue;
+  font-size: 30px;
+}
+
+.road {
+  position: absolute;
+  width: 400px;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  overflow: hidden;
+  border-left: 10px solid blue;
+  border-right: 10px solid blue;
+}
+
+.start_button {
+  width: 490px;
+  background-color: aqua;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.start_button p {
+  color: black;
+  /* padding: 20px; */
+  font-size: 80px;
+  line-height: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.start_button p:hover {
+  background-color: blue;
+  color: white;
+}
+
+.car {
+  width: 40px;
+  height: 80px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  z-index: 10;
+}
+
+.enemy {
+  width: 40px;
+  height: 80px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.line {
+  width: 10px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 245px;
+}
+
+.play_again {
+  font-size: 40px !important;
+  line-height: inherit !important;
+  border: 1px solid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px 35px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
